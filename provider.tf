@@ -1,18 +1,18 @@
 terraform {
   required_providers {
     aws = {
-      source  = "hashicorp/aws"
+      source = "hashicorp/aws"
       version = "5.98.0"
     }
   }
 
   backend "s3" {
-    bucket        = "84ss-remote-state"
-    key           = "vpc-test"
-    region        = "us-east-1"
-    encrypt       = true
-    use_lockfile  = true
-    }
+    bucket = "86ss-remote-state"
+    key    = "vpc-test"
+    region = "us-east-1"
+    encrypt        = true
+    use_lockfile = true
+  }
 }
 
 provider "aws" {
